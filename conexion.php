@@ -5,7 +5,7 @@ $contrasena ='m1p3t3n';
 $db = 'mipeten_edupro';
 */
 $usuario = 'root';
-$contrasena ='';
+$contrasena ='sistemapeten';
 $db = 'edupro';
 
 $servidor = 'localhost';
