@@ -6,6 +6,23 @@ $db = 'edupro';
 
 $servidor = 'localhost';
 
+$included_files = get_included_files();
+
+foreach ($included_files as $filename)
+{
+	if (strstr($filename, 'conexion') !== false)
+	{
+		$dir = dirname($filename);
+		
+		if (@file_exists($dir . '/conexion_local.php'))
+		{
+			@include($dir . '/conexion_local.php');
+		}
+		
+	}
+    
+}
+
 $conectar = mysql_connect($servidor, $usuario, $contrasena) or die ('No se pudo conectar al servidor porque: ' . mysql_error());
 $seleccionar = mysql_select_db($db) or die ('No se pudo seleccionar la base de datos porque: ' . mysql_error());
 
