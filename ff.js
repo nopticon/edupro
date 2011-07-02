@@ -1,18 +1,10 @@
+
 //inicio de la funcion del menu principal
 $(document).ready(function(){
-
-
-			$('#boton2').click(function(){
-			//alert("Presionaste un <a>");
-
-			//$('#menu li').css({'width' : '33%'});
-			$('#tmenu ').css({'top' : '50px'});
-			$('#tmenu').slideToggle("slow");	
-			
-					
-			}); 
-		
-
+	$('#boton2').click(function() {
+		$('#tmenu ').css({'top' : '50px'});
+		$('#tmenu').slideToggle("slow");
+	});
 });
 
 function MM_findObj(n, d) { //v4.01
@@ -102,12 +94,10 @@ function MM_validateForm() { //v4.0
   document.MM_returnValue = (errors == '');
 }
 
-function validarfalta1(){
-	if(!confirm("Deseas ver las faltas del alumno?")){
-		return false
-		}
-	MM_validateForm('carne1','','R');return document.MM_returnValue;
+function validarfalta1() {
+	if (!confirm("Deseas ver las faltas del alumno?")) {
+		return false;
 	}
 	
-
-
+	MM_validateForm('carne1','','R');return document.MM_returnValue;
+}
