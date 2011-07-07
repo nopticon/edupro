@@ -18,7 +18,7 @@ foreach ($included_files as $filename)
 		{
 			@include($dir . '/conexion_local.php');
 		}
-		
+		break;
 	}
     
 }
