@@ -70,9 +70,10 @@ while ($arreglo = mysql_fetch_assoc($ejecutar))
 		case 2:
 			$firma1 = 'Azar&iacute;as Isa&iacute; Hoil Franco';
 			$firma2 = 'Oficinista II';
-			$inicio = 'El infrascrito';
+			$inicio = 'La infrascrita';
 			break;
 		case 3:
+		case 4:
 			$firma1 = 'Gladys Marieta S&aacute;nchez Deluca';
 			$firma2 = 'Oficinista II';
 			$inicio = 'La infrascrita';
@@ -206,7 +207,17 @@ while ($arreglo = mysql_fetch_assoc($ejecutar))
 	
 	$pdf->multitable($infot, 65, $pdf->top(100), 5, 9, 1, array('last_height' => $pdf->top()));
 	
-	$text_block = 'En fe de lo anterior se extiende el presente certificado en Santa Elena de la Cruz, Flores, Pet&eacute;n, a los quince d&iacute;as del mes de octubre del ' . $cv->cv($anio) . '.';
+	switch ($anio)
+	{
+		case 2010:
+			$day_string = 'quince';
+			break;
+		case 2011:
+			$day_string = 'catorce';
+			break;
+	}
+	
+	$text_block = 'En fe de lo anterior se extiende el presente certificado en Santa Elena de la Cruz, Flores, Pet&eacute;n, a los ' . $day_string . ' d&iacute;as del mes de octubre del ' . $cv->cv($anio) . '.';
 	
 	$pdf->text_wrap($text_block, 11, $pdf->page_width() - 185, 65, $pdf->top(50), 20);
 	
