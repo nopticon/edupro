@@ -22,14 +22,15 @@ $ejecutar = mysql_query($sql);
 
 $secciones = mysql_fetch_array($ejecutar);
 
-$seleccionar = 'SELECT * FROM reinscripcion r, secciones s, grado g, alumno a
+$sql = 'SELECT *
+	FROM reinscripcion r, secciones s, grado g, alumno a
 	WHERE r.id_grado = ' . $secciones['id_grado'] . '
 		AND r.id_seccion = ' . $secciones['id_seccion'] . '
 		AND r.anio = ' . $anio . '
 		AND r.id_seccion = s.id_seccion
 		AND r.id_alumno = a.id_alumno
 		AND r.id_grado = g.id_grado';
-$ejecutar = mysql_query($seleccionar);
+$ejecutar = mysql_query($sql);
 
 $i = 0;
 while ($arreglo = mysql_fetch_assoc($ejecutar))

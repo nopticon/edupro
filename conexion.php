@@ -28,6 +28,18 @@ $seleccionar = mysql_select_db($db) or die ('No se pudo seleccionar la base de d
 
 session_start();
 
+/*-- 	TEST: DROP FIELDS FROM ALUMNO TABLE --*/
+$sql = 'SELECT id_grado
+	FROM alumno
+	LIMIT 1';
+if ($test_result = @mysql_query($sql))
+{
+	$sql = 'ALTER TABLE alumno
+		DROP id_grado';
+	@mysql_query($sql);
+}
+/*-- END TEST --*/
+
 function encabezado($titulo = '', $ruta = '', $full = true)
 {
 ?><!DOCTYPE HTML>
