@@ -16,7 +16,7 @@ require_once('../conexion.php');
 		<div class="title">Faltas Acad&eacute;micas</div>
 	</div>
 	
-	<div class="blue">
+	<div class="textblue">
 	<br />
 	<br />
     <?php 
@@ -37,7 +37,7 @@ require_once('../conexion.php');
     <table width="86%">
     <tr>
     <td width="18%" aling="right">&nbsp;</td>
-     <td width="61%"><div align="right">Ingresar Falta para alumno:<br />
+     <td width="61%"><div align="right" class="textblue">Ingresar Falta para alumno:<br />
          <input name="carne" type="text" id="textred" aurotomplete="off" size="25"  autocomplete="off"  /></div></td>
     <td width="21%" aling="left">
 	      <input name="submit" type="image" src="../images/buscar2.png" title="Buscar por carn&eacute;..."  />
@@ -46,15 +46,18 @@ require_once('../conexion.php');
 	</form>
         </td>
         <td width="30%">
-  <div class="a_center">
-		    <img src="../images/list.png" class="text1" /> <a href="faltas_alumnos.php">Ver faltas acad&eacute;micas de alumno</a>
+  <div class="a_center" >
+<img src="../images/list.png" /></div>
+  <div class="a_center" >
+
+		     <a href="faltas_alumnos.php">Ver Ultimas faltas Ingresadas</a>
 		</div>
         </td>
         <td width="34%">
         <form action="faltas2.php" method="get" name="formulario2" id="formulario" onsubmit="return validarfalta1()" target="_blank" >
     <table width="328">
     <tr>
-    <td width="61%" aling="right"><div align="right">Ver Faltas por alumno <br />
+    <td width="61%" aling="right"><div align="right" class="textblue" >Ver Faltas por alumno <br />
         <input name="carne1" type="text" id="textred" aurotomplete="off" size="25" />
     </div></td>
      <td width="32%"><input name="submit2" type="image" src="../images/buscar2.png" title="Buscar por carn&eacute;..."  /></td>
@@ -82,6 +85,6 @@ function buscar(url) {
 }
 //]]>
 </script>
-<?php include('../menucss.php'); ?>
+
 </body>
 </html>

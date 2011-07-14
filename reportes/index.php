@@ -15,7 +15,7 @@ require_once('../conexion.php');
 		<div class="title">Reportes del Sistema</div>
 	</div>
 	
-	<div class="blue">
+	<div class="textblue">
 	
 	<ul class="options">
 		<li><a href="alumnos/listado_alumno.php"><img src="../images/iconos/59.ico" width="20" valign="middle" /> Listado de Alumnos</a></li>

@@ -282,21 +282,35 @@ input, select, textarea {
 .Estilo6 {
 	color: #990000;
 }
+
+
 a:link {
 	color: #000000;
 	text-decoration: none;
+	font-family: tahoma;
+	font-size: 12px;
 }
 a:visited {
 	text-decoration: none;
 	color: #000000;
+	font-family: tahoma;
+	font-size: 12px;
+
+
 }
 a:hover {
 	text-decoration: underline;
 	color: #990000;
+	font-family: tahoma;
+	font-size: 12px;
+
 }
 a:active {
 	text-decoration: none;
 	color: #000000;
+	font-family: tahoma;
+	font-size: 12px;
+
 }
 
 .options {
@@ -323,6 +337,8 @@ a:active {
 	float: left;
 	width: 24.5%;
 	margin: 2px;
+font-family:tahoma;
+font-size:12px;
 }
 #menu li a {
 	display: block;
