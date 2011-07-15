@@ -70,7 +70,7 @@ while ($arreglo = mysql_fetch_assoc($ejecutar))
 		case 2:
 			$firma1 = 'Azar&iacute;as Isa&iacute; Hoil Franco';
 			$firma2 = 'Oficinista II';
-			$inicio = 'La infrascrita';
+			$inicio = 'El infrascrito';
 			break;
 		case 3:
 		case 4:
