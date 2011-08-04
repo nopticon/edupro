@@ -34,8 +34,8 @@ $seccion = $_POST['seccion'];
 $fech = date("Y");
 $carne = $fech . $sexo;
 
-$insertar = "INSERT INTO alumno(carne, codigo_alumno, nombre_alumno, apellido, direccion, orden, registro, fecha, telefono1, edad, sexo, email, padre, madre, encargado, profesion, labora, direccion_labora, dpi, extendida, emergencia, telefono2, status, id_grado)
-	VALUES ('$carne' , '$codigo' , '$nombre' , '$apellido' , '$direccion' , '$orden' , '$registro' , NOW() , '$telefono1' , '$edad' , '$sexo' , '$email' , '$padre' , '$madre' , '$encargado' , '$profesion' , '$laborando' , '$direccion_labora', '$dpi' , '$extendido' , '$emergencia' , '$telefono2' , 'status' , '$grado')";
+$insertar = "INSERT INTO alumno(carne, codigo_alumno, nombre_alumno, apellido, direccion, orden, registro, fecha, telefono1, edad, sexo, email, padre, madre, encargado, profesion, labora, direccion_labora, dpi, extendida, emergencia, telefono2, status)
+	VALUES ('$carne' , '$codigo' , '$nombre' , '$apellido' , '$direccion' , '$orden' , '$registro' , NOW() , '$telefono1' , '$edad' , '$sexo' , '$email' , '$padre' , '$madre' , '$encargado' , '$profesion' , '$laborando' , '$direccion_labora', '$dpi' , '$extendido' , '$emergencia' , '$telefono2' , 'status')";
 $ejecutar = mysql_query($insertar);
 
 //extrae el id
