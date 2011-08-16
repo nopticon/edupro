@@ -21,7 +21,7 @@ require_once('../../conexion.php');
 		
 		<form action="listado_alumno1.php" method="get" name="form1" target="_blank" id="form1">
 <label></label>
-                      </form>                      </td>
+                             </td><br/><br/>
   	                  <table width="792" border="0" align="center">
                         <tr>
                           <td width="175">&nbsp;</td>
@@ -57,8 +57,8 @@ require_once('../../conexion.php');
                           </select></td>
                           <td width="338"><input type="submit" name="Submit" value="Ver Listado..." /></td>
                         </tr>
-                      </table>
-	</div>
+                     </table><br/>
+	</div>  </form>   
 </div>
 <?php include('../../menucss.php');?>                    
 </body>
