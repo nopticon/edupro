@@ -93,6 +93,5 @@ require_once('../conexion.php');
 		
 	</div>
 </div>
-<?php include('../menucss.php'); ?>
 </body>
 </html>

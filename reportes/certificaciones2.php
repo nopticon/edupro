@@ -215,6 +215,9 @@ while ($arreglo = mysql_fetch_assoc($ejecutar))
 		case 2011:
 			$day_string = 'catorce';
 			break;
+		case 2011:
+			$day_string = 'quince';
+			break;
 	}
 	
 	$text_block = 'En fe de lo anterior se extiende el presente certificado en Santa Elena de la Cruz, Flores, Pet&eacute;n, a los ' . $day_string . ' d&iacute;as del mes de octubre del ' . $cv->cv($anio) . '.';

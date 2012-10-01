@@ -110,6 +110,6 @@ if (!$arreglo = mysql_fetch_assoc($ejecutar))
   </div>
 	
 </div>
-<?php include('../menucss.php');?>
+
 </body>
 </html>
